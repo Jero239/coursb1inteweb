@@ -1,18 +1,43 @@
+
+
+@font-face {
+    font-family: 'testfont';
+    src: url('../fonts/creepster-regular-webfont.woff') format('woff'),
+    url('../fonts/creepster-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    display: swap;
+}
+
+
+
+ body{
+     font-family: "testfont";
+
+ }
+
+
+ 
  a{
-            text-transform: uppercase; 
-            color:red; 
-            text-decoration: none; 
-            font-size: 32px;
-        }
+    text-transform: uppercase; 
+    color:red; 
+    text-decoration: none; 
+    font-size: 32px;
 
-        p.coucou{
-            color: green;
-        }
+   
+ }
 
-        p.test.belette{
-            .cheval{
-                a{ 
-                    color: purple;
-                }
-            }
+
+
+
+/* p.coucou{
+    color: green
+} */
+
+p.test.belette{
+    .cheval{
+        a{ 
+            color: purple;
         }
+    }
+}
