@@ -41,3 +41,87 @@ p.test.belette{
         }
     }
 }
+
+
+
+/*
+ POSITIONS
+*/
+
+.square{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    border: 5px black solid;
+    position: fixed;
+    bottom:10px;
+    right:10px;
+   
+}
+
+.square2{
+    height: 250px;
+    width: 250px;
+    background-color: green;
+    border: 5px black solid;
+    position: relative;
+    left:250px;
+
+    
+
+    div{
+        height: 10px;
+        width: 10px;
+        background-color: white;
+        border-radius: 100%;
+        position: absolute;
+       
+
+        &:first-child{
+            top:5px;
+            left:5px;
+        }
+
+        &:nth-child(2){
+            top:5px;
+            right:5px;
+        }
+
+        &:nth-child(3){
+            bottom:5px;
+            right:5px;
+        }
+
+        &:last-child{
+            bottom:5px;
+            left:5px;
+        }
+
+    }
+   
+}
+
+.text{
+    background-color: beige;
+    transition: background-color .5s ease;
+    height: 200vh;
+
+    p{
+        color: brown;
+        width: fit-content;
+        &:nth-child(3):hover{
+            color: #fff;
+        }
+    }
+
+    &:hover{
+        background-color: blue;
+    }
+    .square3{
+        height: 50px;
+        aspect-ratio: 1;
+        background-color: blueviolet;
+        position: sticky;
+        top:20px;
+    }
+}
