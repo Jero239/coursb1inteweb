@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 
 
 @font-face {
@@ -7,6 +10,31 @@
     font-weight: normal;
     font-style: normal;
     display: swap;
+}
+
+@keyframes scrollDown {
+    0%{
+        top:0;
+    }
+    100%{
+        top:20px;
+    }
+
+}
+
+.scroll{
+    animation: scrollDown 2s linear infinite alternate;
+    position: relative;
+}
+
+
+.icon-arrow{
+    mask: url('data:image/svg+xml,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>');
+    position: relative;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-color: green;
 }
 
 
@@ -166,4 +194,22 @@ p.test.belette{
         background-color: transparent;
     }
     
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    tr:nth-child(odd){
+        background-color: lightcoral;
+        color:white;
+    }
+    tr,
+    td{
+        border: 1px solid #000;
+        padding: 2rem;
+    }
+    td{
+        width: calc( 100% / 3 );
+    }
 }
