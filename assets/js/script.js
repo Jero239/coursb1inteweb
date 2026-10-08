@@ -23,5 +23,27 @@ const dix = myArray[6][2][0];
 console.log(dix, myArray[myArray.length - 1])
 
 
+const eleves = [
+    'Justine', 
+    'Franck',
+    'Baptiste',
+    'Clément',
+    'Manon',
+    'Maïwenn',
+    'Mathis',
+    'Vladislav',
+    'Timéo',
+    'Jérôme',
+    'Tom',
+    'Gabriel'
+];
 
 
+//console.log(eleves[8])
+
+
+
+for (let i = 0; i < eleves.length; i++) {
+    console.log('Bonjour '+eleves[i])
+    
+}

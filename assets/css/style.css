@@ -15,8 +15,9 @@ html{
 .hero{
     height: 100vh;
     position: relative;
-    text-align: center;
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &::after{
         content: '';
@@ -32,8 +33,11 @@ html{
     img{
         width: 250px;
     }
-    video{
-        /* filter: brightness(.7); */
+    
+}
+
+
+.hero video{
         position: absolute;
         z-index: -3;
         left:0;
@@ -41,7 +45,6 @@ html{
         width: 100%;
         height: 100%;
         object-fit: cover;
-    }
 }
 
 @keyframes scrollDown {
