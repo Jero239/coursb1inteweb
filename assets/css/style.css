@@ -12,6 +12,38 @@ html{
     display: swap;
 }
 
+.hero{
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    align-content: center;
+
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background-color: orange;
+        z-index: -1;
+        opacity: .3;
+    }
+    img{
+        width: 250px;
+    }
+    video{
+        /* filter: brightness(.7); */
+        position: absolute;
+        z-index: -3;
+        left:0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
 @keyframes scrollDown {
     0%{
         top:0;
